@@ -35,12 +35,11 @@
       referral_source: formData.referral_source || null,
       message: formData.message || null,
     };
-    const { data, error } = await sb
+    const { error } = await sb
       .from('contact_submissions')
-      .insert([payload])
-      .select();
+      .insert([payload]);
     if (error) throw error;
-    return data;
+    return true;
   }
 
   // Placeholder for future blog CMS use

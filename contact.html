@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book an Appointment | Matthew Aucamp Physiotherapy Gqeberha</title>
+<meta name="description" content="Book an appointment with Matthew Aucamp Physiotherapy in Walmer, Gqeberha. DBC Certified specialist in back pain, neck pain and injury rehabilitation.">
+<meta name="keywords" content="book physiotherapist Gqeberha, contact physio Walmer, physio appointment Port Elizabeth">
+<meta name="author" content="Matthew Aucamp Physiotherapy">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Book an Appointment | Matthew Aucamp Physiotherapy">
+<meta property="og:description" content="Book a physiotherapy appointment in Walmer, Gqeberha.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://matthewaucampphysio.co.za/contact">
+<meta property="og:image" content="https://matthewaucampphysio.co.za/assets/images/og-image.jpg">
+<meta property="og:locale" content="en_ZA">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://matthewaucampphysio.co.za/contact">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalBusiness",
+  "name":"Matthew Aucamp Physiotherapy",
+  "url":"https://matthewaucampphysio.co.za",
+  "telephone":"+27-XX-XXX-XXXX",
+  "email":"campphysiotherapy@gmail.com",
+  "address":{ "@type":"PostalAddress","streetAddress":"64 Main Road","addressLocality":"Walmer","addressRegion":"Eastern Cape","postalCode":"6065","addressCountry":"ZA" }
+}
+</script>
+</head>
+<body>
+
+<nav class="nav" aria-label="Primary">
+  <div class="nav__inner">
+    <a href="/" class="nav__logo">Matthew Aucamp<span>Physiotherapy</span></a>
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <div class="nav__links">
+      <a href="/" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="blog/" class="nav__link">Blog</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="nav__cta">Book Appointment</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero page-hero--sm" style="background:var(--primary);">
+  <div>
+    <div class="breadcrumb"><a href="/">Home</a><span>/</span>Contact</div>
+    <h1>Book Your Physiotherapy Appointment in Gqeberha</h1>
+    <p class="page-hero__subtitle">New patients welcome. Most appointments scheduled within the same week.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Practice info -->
+      <aside class="contact-info">
+        <h2>Practice Information</h2>
+        <div class="contact-info__block">
+          <h4>Address</h4>
+          <p>64 Main Road<br>Walmer, Gqeberha<br>Eastern Cape, 6065</p>
+        </div>
+        <div class="contact-info__block">
+          <h4>Email</h4>
+          <p><a href="mailto:campphysiotherapy@gmail.com">campphysiotherapy@gmail.com</a></p>
+        </div>
+        <div class="contact-info__block">
+          <h4>Phone</h4>
+          <p>+27 XX XXX XXXX</p>
+        </div>
+        <div class="contact-info__block">
+          <h4>Opening Hours</h4>
+          <table class="hours-table">
+            <tr><td>Mon – Fri</td><td>08:00 – 17:00</td></tr>
+            <tr><td>Saturday</td><td>08:00 – 12:00</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </table>
+        </div>
+        <!-- TODO: Paste Google Maps iframe for 64 Main Road Walmer Gqeberha -->
+        <div class="map-embed">Google Maps embed — paste iframe here for 64 Main Road, Walmer, Gqeberha</div>
+      </aside>
+
+      <!-- Booking form -->
+      <div class="contact-form-wrap">
+        <h2>Request an Appointment</h2>
+        <p>Fill in the form below and Matthew will be in touch within 24 hours to confirm your appointment.</p>
+
+        <form class="form" id="booking-form" novalidate>
+          <div class="form__error-banner" role="alert"></div>
+
+          <div class="form__group" data-field="name">
+            <label for="name">Full Name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+            <span class="form__error"></span>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group" data-field="email">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form__error"></span>
+            </div>
+            <div class="form__group" data-field="phone">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+              <span class="form__error"></span>
+            </div>
+          </div>
+
+          <div class="form__group" data-field="condition">
+            <label for="condition">Condition / Reason for Visit <span class="req">*</span></label>
+            <textarea id="condition" name="condition" required placeholder="e.g. Lower back pain, sports injury, post-op recovery..."></textarea>
+            <span class="form__error"></span>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group" data-field="preferred_date">
+              <label for="preferred_date">Preferred Appointment Date</label>
+              <input type="date" id="preferred_date" name="preferred_date">
+              <span class="form__error"></span>
+            </div>
+            <div class="form__group" data-field="referral_source">
+              <label for="referral_source">How did you hear about us?</label>
+              <select id="referral_source" name="referral_source">
+                <option value="">Select an option</option>
+                <option>Google Search</option>
+                <option>Referral from friend or family</option>
+                <option>Social Media</option>
+                <option>Doctor referral</option>
+                <option>Other</option>
+              </select>
+              <span class="form__error"></span>
+            </div>
+          </div>
+
+          <div class="form__group" data-field="message">
+            <label for="message">Additional Message</label>
+            <textarea id="message" name="message" placeholder="Anything else we should know?"></textarea>
+            <span class="form__error"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">
+            <span>Send Appointment Request</span>
+            <span class="spinner"></span>
+          </button>
+          <p class="form__note">We aim to respond within 24 hours. For urgent queries, email <a href="mailto:campphysiotherapy@gmail.com">campphysiotherapy@gmail.com</a>.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="/" class="footer__logo">Matthew Aucamp Physiotherapy</a>
+        <p class="footer__tagline">Expert Physiotherapy in Gqeberha — DBC Certified neck &amp; back specialist serving Walmer, Port Elizabeth and the Eastern Cape.</p>
+        <a href="https://www.linkedin.com/in/matthew-aucamp-916639207/" class="footer__social" aria-label="LinkedIn" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></a>
+      </div>
+      <div class="footer__col">
+        <h4>Quick Links</h4>
+        <ul><li><a href="/">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="blog/">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <ul><li><a href="services.html#musculoskeletal">Musculoskeletal</a></li><li><a href="services.html#manual-therapy">Manual Therapy</a></li><li><a href="services.html#injury-rehabilitation">Injury Rehab</a></li><li><a href="services.html#dbc-neck">DBC Neck</a></li><li><a href="services.html#dbc-back">DBC Back</a></li><li><a href="services.html#post-operative">Post-Op Recovery</a></li></ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <address class="footer__contact">64 Main Road<br>Walmer, Gqeberha<br>Eastern Cape, 6065<br><br><a href="mailto:campphysiotherapy@gmail.com">campphysiotherapy@gmail.com</a><br>+27 XX XXX XXXX<br><br>Mon–Fri 08:00–17:00<br>Sat 08:00–12:00</address>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom"><div class="container">© 2026 Matthew Aucamp Physiotherapy &nbsp;|&nbsp; HPCSA Registered &nbsp;|&nbsp; Built by <a href="https://digiiworks.co" target="_blank" rel="noopener">DigiWorks</a></div></div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" defer></script>
+<script src="js/config.js" defer></script>
+<script src="js/supabase-client.js" defer></script>
+<script src="js/nav.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/form.js" defer></script>
+</body>
+</html>

@@ -537,7 +537,11 @@ em { font-style: italic; }
   box-shadow: var(--shadow-sm);
   border-left: 4px solid var(--accent);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+.testimonial blockquote { flex: 1; }
 .testimonial__stars { color: #F5B400; font-size: 0.9375rem; margin-bottom: 16px; letter-spacing: 2px; }
 .testimonial blockquote {
   font-size: 1rem;
@@ -551,27 +555,17 @@ em { font-style: italic; }
   align-items: center;
   gap: 14px;
   padding-top: 20px;
-  margin-top: 20px;
+  margin-top: auto;
   border-top: 1px solid var(--border);
 }
 .testimonial__avatar {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.875rem;
-  color: var(--white);
-  letter-spacing: 0.02em;
-  background: var(--gradient-cta);
+  object-fit: cover;
+  border: 2px solid var(--surface);
 }
-.testimonial__avatar--alt1 { background: linear-gradient(135deg, #083966 0%, #1A73C5 100%); }
-.testimonial__avatar--alt2 { background: linear-gradient(135deg, #1E8A52 0%, #3DC87E 100%); }
-.testimonial__avatar--alt3 { background: linear-gradient(135deg, #0B4F8A 0%, #2EAD6C 100%); }
 .testimonial__author-text { display: flex; flex-direction: column; line-height: 1.4; }
 .testimonial__author strong { color: var(--dark); font-size: 0.9375rem; font-weight: 700; }
 .testimonial__author span { color: var(--text-muted); font-size: 0.8125rem; margin-top: 2px; }
@@ -1165,8 +1159,11 @@ em { font-style: italic; }
   color: var(--text);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
-.article a { color: var(--primary); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
-.article a:hover { color: var(--accent-dark); }
+.article a:not(.btn) { color: var(--primary); text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.article a:not(.btn):hover { color: var(--accent-dark); }
+/* Ensure CTA button keeps white text on hover regardless of cascade */
+.article__cta .btn,
+.article__cta .btn:hover { color: var(--white) !important; text-decoration: none; }
 .article strong { color: var(--dark); }
 .article hr { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
 .article__cta {
@@ -1181,3 +1178,71 @@ em { font-style: italic; }
 .article__cta p { color: var(--text-muted); margin-bottom: 20px; }
 
 .page-hero { padding-top: 140px; }
+
+/* === FAQ accordion === */
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.faq-item[open] { border-color: var(--accent); box-shadow: var(--shadow-sm); }
+.faq-item summary {
+  cursor: pointer;
+  padding: 22px 28px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--dark);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  transition: var(--transition);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--surface-alt);
+  color: var(--accent-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: var(--transition);
+}
+.faq-item[open] summary::after {
+  content: '−';
+  background: var(--accent);
+  color: var(--white);
+  transform: rotate(180deg);
+}
+.faq-item summary:hover { background: var(--surface); }
+.faq-item p {
+  padding: 0 28px 22px;
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  margin: 0 0 0.75rem;
+}
+.faq-item p:last-child { margin-bottom: 0; padding-bottom: 22px; }
+.faq-item p a { color: var(--primary); text-decoration: underline; text-decoration-color: var(--accent); }
+
+
+/* === Solid nav variant for pages without a hero (blog posts) === */
+.nav.nav--solid {
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  padding: 14px 0;
+}
+.nav.nav--solid .nav__logo,
+.nav.nav--solid .nav__link { color: var(--text); }
+.nav.nav--solid .nav__hamburger span { background: var(--text); }

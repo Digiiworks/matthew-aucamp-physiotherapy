@@ -458,7 +458,9 @@ em { font-style: italic; }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+  align-items: stretch;
 }
+.card-grid > .testimonial { height: auto; min-height: 100%; }
 .card-grid--2 { grid-template-columns: repeat(2, 1fr); }
 .card-grid--4 { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 1024px) { .card-grid, .card-grid--4 { grid-template-columns: repeat(2, 1fr); } }
@@ -976,9 +978,14 @@ em { font-style: italic; }
   margin: 0 auto;
   padding: 0 32px;
   display: flex;
-  gap: 24px;
+  gap: 32px;
+  justify-content: center;
   overflow-x: auto;
   scrollbar-width: none;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .services-nav__inner { flex-wrap: nowrap; justify-content: flex-start; gap: 24px; }
 }
 .services-nav__inner::-webkit-scrollbar { display: none; }
 .services-nav a {
@@ -1102,7 +1109,7 @@ em { font-style: italic; }
   line-height: 1.8;
   color: var(--text);
 }
-.article > * { max-width: 880px; margin-left: auto; margin-right: auto; }
+.article > * { max-width: 1080px; margin-left: auto; margin-right: auto; }
 .article__hero { max-width: 100%; }
 .article__header { margin-bottom: 2.5rem; }
 .article__tag {
@@ -1239,12 +1246,15 @@ em { font-style: italic; }
 .faq-item p a { color: var(--primary); text-decoration: underline; text-decoration-color: var(--accent); }
 
 
-/* === Solid nav variant for pages without a hero (blog posts) === */
+/* === Solid nav variant for pages without a hero (blog posts, service pages) === */
 .nav.nav--solid {
-  background: var(--white);
-  box-shadow: var(--shadow-sm);
-  padding: 14px 0;
+  background: var(--white) !important;
+  box-shadow: var(--shadow-sm) !important;
+  padding: 14px 0 !important;
 }
-.nav.nav--solid .nav__logo,
-.nav.nav--solid .nav__link { color: var(--text); }
-.nav.nav--solid .nav__hamburger span { background: var(--text); }
+.nav.nav--solid .nav__logo { color: var(--primary-dark) !important; }
+.nav.nav--solid .nav__logo span { color: var(--text-muted) !important; }
+.nav.nav--solid .nav__link { color: var(--text) !important; }
+.nav.nav--solid .nav__hamburger span { background: var(--text) !important; }
+.nav.nav--solid .nav__cta { color: var(--white) !important; }
+

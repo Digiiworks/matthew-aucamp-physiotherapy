@@ -1,0 +1,9 @@
+{
+  "name": "matthew-aucamp-physiotherapy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Server-side dependencies for Vercel Functions only. The site itself is vanilla HTML/CSS/JS — no build step.",
+  "dependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

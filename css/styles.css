@@ -1095,13 +1095,15 @@ em { font-style: italic; }
 @media (max-width: 768px) { .blog-grid { grid-template-columns: 1fr; } }
 
 .article {
-  max-width: 720px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 64px 32px;
   font-size: 1.0625rem;
   line-height: 1.8;
   color: var(--text);
 }
+.article > * { max-width: 880px; margin-left: auto; margin-right: auto; }
+.article__hero { max-width: 100%; }
 .article__header { margin-bottom: 2.5rem; }
 .article__tag {
   display: inline-block;

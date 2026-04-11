@@ -825,6 +825,16 @@ em { font-style: italic; }
   color: rgba(255,255,255,0.7);
 }
 .footer__bottom a:hover { color: var(--accent-light); }
+.footer__digiiworks {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.footer__digiiworks-logo {
+  width: 100px;
+  height: auto;
+  vertical-align: middle;
+}
 
 .author-box {
   margin: 48px 0;

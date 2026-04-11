@@ -820,20 +820,44 @@ em { font-style: italic; }
 .footer__bottom {
   background: var(--primary-dark);
   padding: 20px 0;
-  text-align: center;
   font-size: 0.8125rem;
   color: rgba(255,255,255,0.7);
+}
+.footer__bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
 }
 .footer__bottom a:hover { color: var(--accent-light); }
 .footer__digiiworks {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  position: relative;
+  vertical-align: middle;
 }
 .footer__digiiworks-logo {
   width: 75px;
   height: auto;
-  vertical-align: middle;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+.footer__digiiworks-logo--white {
+  opacity: 1;
+}
+.footer__digiiworks-logo--gradient {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer__digiiworks:hover .footer__digiiworks-logo--white {
+  opacity: 0;
+}
+.footer__digiiworks:hover .footer__digiiworks-logo--gradient {
+  opacity: 1;
 }
 
 .author-box {

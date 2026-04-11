@@ -353,12 +353,12 @@ def render(p):
 <meta property="og:description" content="{p["desc"]}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
-<meta property="og:image" content="{p["image"]}">
+<meta property="og:image" content="https://matthew-aucamp-physiotherapy.vercel.app/assets/images/og-image.jpg">
 <meta property="og:locale" content="en_ZA">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{p["title"]}">
 <meta name="twitter:description" content="{p["desc"]}">
-<meta name="twitter:image" content="{p["image"]}">
+<meta name="twitter:image" content="https://matthew-aucamp-physiotherapy.vercel.app/assets/images/og-image.jpg">
 <link rel="alternate" hreflang="en-ZA" href="{canonical}">
 <link rel="alternate" hreflang="x-default" href="{canonical}">
 <link rel="canonical" href="{canonical}">

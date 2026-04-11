@@ -18,3 +18,32 @@
   });
   elements.forEach(function (el) { observer.observe(el); });
 })();
+
+// Hero background parallax
+(function () {
+  var bg = document.querySelector('.hero__bg');
+  var hero = document.querySelector('.hero');
+  if (!bg || !hero) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var ticking = false;
+  function update() {
+    var rect = hero.getBoundingClientRect();
+    if (rect.bottom < 0 || rect.top > window.innerHeight) {
+      ticking = false;
+      return;
+    }
+    var offset = rect.top * -0.35;
+    bg.style.transform = 'translate3d(0,' + offset + 'px,0)';
+    ticking = false;
+  }
+  function onScroll() {
+    if (!ticking) {
+      window.requestAnimationFrame(update);
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  update();
+})();

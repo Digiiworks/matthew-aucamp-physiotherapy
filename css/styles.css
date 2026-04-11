@@ -374,10 +374,18 @@ em { font-style: italic; }
   overflow: hidden;
 }
 .hero__bg {
-  position: absolute; inset: 0;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  right: 0;
+  bottom: -10%;
   background-size: cover;
   background-position: center;
   z-index: 0;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__bg { transform: none !important; }
 }
 .hero__overlay {
   position: absolute; inset: 0;

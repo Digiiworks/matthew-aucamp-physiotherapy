@@ -305,7 +305,7 @@ FOOTER = '''<footer class="footer">
       </div>
     </div>
   </div>
-  <div class="footer__bottom"><div class="container">© 2026 Matthew Aucamp Physiotherapy &nbsp;|&nbsp; HPCSA Registered &nbsp;|&nbsp; Built by <a href="https://digiiworks.co" target="_blank" rel="noopener" class="footer__digiiworks"><img src="/images/logos/digiiworks-d.svg" alt="Digiiworks" class="footer__digiiworks-logo">Digiiworks</a></div></div>
+  <div class="footer__bottom"><div class="container">© 2026 Matthew Aucamp Physiotherapy &nbsp;|&nbsp; HPCSA Registered &nbsp;|&nbsp; Built by <a href="https://digiiworks.co" target="_blank" rel="noopener" class="footer__digiiworks"><img src="/images/logos/digiiworks-logo-white.svg" alt="Digiiworks" class="footer__digiiworks-logo"></a></div></div>
 </footer>'''
 
 def render(p):

@@ -354,6 +354,11 @@ def render(p):
 <meta property="og:type" content="website">
 <meta property="og:url" content="{canonical}">
 <meta property="og:image" content="https://matthew-aucamp-physiotherapy.vercel.app/assets/images/og-image.jpg">
+<meta property="og:image:secure_url" content="https://matthew-aucamp-physiotherapy.vercel.app/assets/images/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Matthew Aucamp Physiotherapy — DBC Certified Physiotherapist in Gqeberha">
 <meta property="og:locale" content="en_ZA">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{p["title"]}">

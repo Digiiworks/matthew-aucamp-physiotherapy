@@ -240,9 +240,6 @@ em { font-style: italic; }
   letter-spacing: -0.01em;
   line-height: 1.2;
   transition: var(--transition);
-  display: flex;
-  align-items: center;
-  gap: 10px;
   position: relative;
   padding-left: 60px;
 }
@@ -257,11 +254,15 @@ em { font-style: italic; }
   opacity: 1;
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .nav__logo-img--black {
   opacity: 0;
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .nav.scrolled .nav__logo-img--white { opacity: 0; }
 .nav.scrolled .nav__logo-img--black { opacity: 1; }

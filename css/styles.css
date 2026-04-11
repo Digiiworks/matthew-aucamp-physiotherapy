@@ -401,6 +401,7 @@ em { font-style: italic; }
 }
 @media (max-width: 1024px) and (orientation: landscape) {
   .hero__content { padding-top: 75px; }
+  .hero h1 { margin-top: 22px; }
 }
 .hero h1 {
   color: var(--white);

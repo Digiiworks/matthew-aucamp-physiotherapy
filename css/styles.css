@@ -837,6 +837,7 @@ em { font-style: italic; }
   gap: 6px;
   position: relative;
   vertical-align: middle;
+  margin-left: 5px;
 }
 .footer__digiiworks-logo {
   width: 75px;

@@ -408,7 +408,7 @@ em { font-style: italic; }
 @media (max-width: 640px) {
   .hero {
     align-items: flex-start;
-    padding-top: 220px;
+    padding-top: 145px;
     padding-bottom: 48px;
   }
 }

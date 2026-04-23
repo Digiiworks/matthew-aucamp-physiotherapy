@@ -372,7 +372,7 @@ def render(p):
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-400-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-800-latin.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/fonts/fonts.css">
-<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/styles.css?v=20260423b">
 
 <script type="application/ld+json">
 {json.dumps(service_schema, indent=2)}

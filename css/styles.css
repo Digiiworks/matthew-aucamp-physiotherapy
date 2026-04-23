@@ -403,11 +403,12 @@ em { font-style: italic; }
 @media (min-width: 641px) and (max-width: 1024px) {
   .hero__content { padding-top: 100px; }
   .hero h1 { margin-top: 0; }
+  .hero__eyebrow { margin-top: 25px; }
 }
 @media (max-width: 640px) {
   .hero {
     align-items: flex-start;
-    padding-top: 185px;
+    padding-top: 220px;
     padding-bottom: 48px;
   }
 }

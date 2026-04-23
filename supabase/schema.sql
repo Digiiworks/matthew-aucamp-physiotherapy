@@ -36,7 +36,7 @@ INSERT INTO clients (name, business_name, email, industry, location, website_url
 VALUES (
   'Matthew Aucamp',
   'Matthew Aucamp Physiotherapy',
-  'campphysiotherapy@gmail.com',
+  'contact@matthewaucampphysio.co.za',
   'Healthcare - Physiotherapy',
   '64 Main Road, Walmer, Gqeberha, Eastern Cape, South Africa',
   'https://matthewaucampphysio.co.za',

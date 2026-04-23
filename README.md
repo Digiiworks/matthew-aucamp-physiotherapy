@@ -5,7 +5,7 @@ Official website for **Matthew Aucamp Physiotherapy** — DBC Certified physioth
 Specialising in musculoskeletal conditions, manual therapy, injury rehabilitation, and DBC Certified neck & back rehabilitation.
 
 - **Practice**: 64 Main Road, Walmer, Gqeberha, Eastern Cape, 6065
-- **Email**: campphysiotherapy@gmail.com
+- **Email**: contact@matthewaucampphysio.co.za
 - **Director**: Matthew Aucamp — BSc Physiotherapy (UFS), DBC Certified Neck & Back Expert
 
 ---

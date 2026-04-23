@@ -68,7 +68,7 @@
       submitBtn.classList.remove('loading');
       submitBtn.disabled = false;
       if (errorBanner) {
-        errorBanner.textContent = 'Sorry, something went wrong sending your request. Please try again or email campphysiotherapy@gmail.com directly.';
+        errorBanner.textContent = 'Sorry, something went wrong sending your request. Please try again or email contact@matthewaucampphysio.co.za directly.';
         errorBanner.classList.add('visible');
       }
     }

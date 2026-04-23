@@ -24,7 +24,7 @@
   async function submitContactForm(formData) {
     const sb = getClient();
     if (!sb) {
-      throw new Error('Supabase is not configured. Please contact us at campphysiotherapy@gmail.com.');
+      throw new Error('Supabase is not configured. Please contact us at contact@matthewaucampphysio.co.za.');
     }
     const payload = {
       name: formData.name,

@@ -301,7 +301,7 @@ FOOTER = '''<footer class="footer">
       </div>
       <div class="footer__col">
         <h4>Contact</h4>
-        <address class="footer__contact">64 Main Road<br>Walmer, Gqeberha<br>Eastern Cape, 6065<br><br><a href="mailto:campphysiotherapy@gmail.com">campphysiotherapy@gmail.com</a><br>+27 83 293 3445<br><br>Mon–Fri 08:00–17:00<br>Sat 08:00–12:00</address>
+        <address class="footer__contact">64 Main Road<br>Walmer, Gqeberha<br>Eastern Cape, 6065<br><br><a href="mailto:contact@matthewaucampphysio.co.za">contact@matthewaucampphysio.co.za</a><br>+27 83 293 3445<br><br>Mon–Fri 08:00–17:00<br>Sat 08:00–12:00</address>
       </div>
     </div>
   </div>
@@ -431,7 +431,7 @@ def render(p):
     <h2>Book Your Appointment</h2>
     <p>New patients welcome at the Walmer practice. Most appointments scheduled within the same week.</p>
     <a href="/contact" class="btn btn--primary btn--lg">Book an Appointment</a>
-    <span class="cta-banner__email">Or email <a href="mailto:campphysiotherapy@gmail.com">campphysiotherapy@gmail.com</a></span>
+    <span class="cta-banner__email">Or email <a href="mailto:contact@matthewaucampphysio.co.za">contact@matthewaucampphysio.co.za</a></span>
   </div>
 </section>
 
